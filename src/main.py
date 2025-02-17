@@ -10,7 +10,7 @@ key: str = os.environ.get("SUPABASE_KEY")
 #initialize Supabase client
 supabase: Client = create_client(url, key)
 
-#Remove this code block 
+#Remove this code block later
 try:
     response = supabase.auth.get_user()
     print("Supabase connection is working!")
