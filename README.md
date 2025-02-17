@@ -15,6 +15,7 @@ This project is an AI-driven lead research and scoring agent that:
 ## 📂 Project Structure
 
 ```
+
 lead-research-agent/
 │── src/
 │   ├── main.py                 # Main entry point
@@ -37,9 +38,41 @@ lead-research-agent/
 │── README.md                   # Project documentation
 │── requirements.txt             # Dependencies
 │── .env                         # Environment variables
+
 ```
 
 ### **1️⃣ Setup & Core Configuration**
+````
+cd your-repository
+
+git clone https://github.com/your-username/your-repository.git
+
+````
+-
+### **4️⃣ Supabase Database Integration**
+https://supabase.com/docs/reference/python/introduction
+
+### Installing
+````
+pip install supabase
+````
+### Initializing
+````
+import os
+from supabase import create_client, Client
+
+url: str = os.environ.get("SUPABASE_URL")
+key: str = os.environ.get("SUPABASE_KEY")
+supabase: Client = create_client(url, key)
+````
+
+You can initialize a new Supabase client using the create_client() method.
+
+The Supabase client is your entrypoint to the rest of the Supabase functionality and is the easiest way to interact with everything we offer within the Supabase ecosystem.
+
+The unique Supabase URL which is supplied when you create a new project in your project dashboard.
+
+The unique Supabase Key which is supplied when you create a new project in your project dashboard.
 
 -
 
@@ -48,10 +81,6 @@ lead-research-agent/
 -
 
 ### **3️⃣ Lead Scoring System**
-
--
-
-### **4️⃣ Database Integration**
 
 -
 
