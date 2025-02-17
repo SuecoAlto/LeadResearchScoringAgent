@@ -73,6 +73,33 @@ The unique Supabase URL which is supplied when you create a new project in your 
 
 The unique Supabase Key which is supplied when you create a new project in your project dashboard.
 
+To test the connection go to "supabase → SQL Editor" and run this to create a table with these columbs 
+````
+CREATE TABLE leads (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    company TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+````
+Run this test script to insert a test lead into the database to ensure proper functionality
+````
+test_lead = {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "company": "TestCorp",
+}
+
+try:
+    response = supabase.table("leads").insert(test_lead).execute()
+    print("Successfully inserted test lead!")
+    print(response)
+except Exception as e:
+    print("Failed to insert test lead:", e)
+```
+If the insert was successfull, the setup is completed and tested.
+
 ### **3️⃣ Lead Research Module**
 
 -
