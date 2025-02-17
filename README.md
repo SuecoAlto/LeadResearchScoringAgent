@@ -42,19 +42,20 @@ lead-research-agent/
 ```
 
 ### **1️⃣ Setup & Core Configuration**
-cd your-repository
 ````
+cd your-repository
+
 git clone https://github.com/your-username/your-repository.git
 ````
 
-### **4️⃣ Supabase Database Integration**
+#### **2️⃣ Supabase Database Integration**
 https://supabase.com/docs/reference/python/introduction
 
-### Installing
+#### Installing
 ````
 pip install supabase
 ````
-### Initializing
+#### Initializing
 ````
 import os
 from supabase import create_client, Client
