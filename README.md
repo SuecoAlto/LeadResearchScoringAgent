@@ -67,15 +67,13 @@ supabase: Client = create_client(url, key)
 
 You can initialize a new Supabase client using the create_client() method.
 
-The Supabase client is your entrypoint to the rest of the Supabase functionality and is the easiest way to interact with everything we offer within the Supabase ecosystem.
+The Supabase client is your entrypoint to the rest of the Supabase functionality and is the easiest way to interact with everything offered within the Supabase ecosystem.
 
 The unique Supabase URL which is supplied when you create a new project in your project dashboard.
 
 The unique Supabase Key which is supplied when you create a new project in your project dashboard.
 
--
-
-### **2️⃣ Lead Research Module**
+### **3️⃣ Lead Research Module**
 
 -
 
