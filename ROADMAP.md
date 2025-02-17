@@ -129,10 +129,10 @@ Two methods to evaluate leads:
 
 📌 Summary & Execution Plan
 
-1️⃣ Database: Supabase (best API support & free for demo).
-2️⃣ Lead Research: Scraping + OpenCorporates API + RAG-based retrieval (cost-effective & scalable).
-3️⃣ Lead Scoring: Rule-based initially, enhanced by RAG retrieval, future support for ML.
-4️⃣ Call Script: GPT-based dynamic generation, RAG-enhanced contextual scripts, fallback templates.
-5️⃣ UI: Telegram bot first, move to a web app later.
+1️⃣ Database: Supabase (best API support & free for demo).  
+2️⃣ Lead Research: Scraping + OpenCorporates API + RAG-based retrieval (cost-effective & scalable).  
+3️⃣ Lead Scoring: Rule-based initially, enhanced by RAG retrieval, future support for ML.  
+4️⃣ Call Script: GPT-based dynamic generation, RAG-enhanced contextual scripts, fallback templates.  
+5️⃣ UI: Telegram bot first, move to a web app later.  
 
 📌 Target Milestone: A functional RAG-powered prototype, followed by iterative improvements.
