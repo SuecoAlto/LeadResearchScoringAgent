@@ -48,7 +48,7 @@ cd your-repository
 git clone https://github.com/your-username/your-repository.git
 ````
 
-#### **2️⃣ Supabase Database Integration**
+### **2️⃣ Supabase Database Integration**
 https://supabase.com/docs/reference/python/introduction
 
 #### Installing
