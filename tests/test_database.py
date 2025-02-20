@@ -2,8 +2,8 @@
 # The code first initializes the Supabase client using the Supabase URL and key from the environment variables. 
 
 
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
 from supabase import create_client, Client
 
 load_dotenv()
@@ -14,7 +14,7 @@ key: str = os.environ.get("SUPABASE_KEY")
 #initialize Supabase client
 supabase: Client = create_client(url, key)
 
-#Remove this code block later
+# Connection test to Supabase
 try:
     response = supabase.auth.get_user()
     print("Supabase connection is working!")
